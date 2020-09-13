@@ -1,2 +1,4 @@
 # ATM_Python
- Automatic Teller Machine 
+ Automatic Teller Machine
+
+ This is a simple ATM script with python.
