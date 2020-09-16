@@ -93,4 +93,5 @@ while True:
         if Q.upper() == 'Y':
             os.system('cls')
         else:
-            exit()
+            os.system('cls')
+            break
