@@ -22,7 +22,7 @@ while True:
     os.system('cls')
     while True:
         print('\nSelamat datang di ATM progate ...')
-        print('\n1-Cek Saldo \n2-Tarik \n3-Simpan \n4-Ganti Pin \n5-Keluar')
+        print('\n1-Cek Saldo \n2-Tarik \n3-Simpan \n4-Ganti Pin')
 
         selectmenu = int(input('\nSilahkan pilih menu: '))
         os.system('cls')
@@ -76,16 +76,6 @@ while True:
             else:
                 print('maaf, pin anda salah!')
 
-        elif selectmenu == 5:
-            print('-'*45)
-            print('Resi tercetak otomatis saat anda keluar. \nHarap simpan tanda terima ini \nsebagai bukti transaksi anda.')
-            print('\nNo. Record: ',random.randint(100000, 1000000))
-            print('Tanggal: ', datetime.datetime.now())
-            print('Saldo akhir: ', atm.checkBalance())
-            print('\nTerimakasih telah menggunakan ATM Progate!')
-            print('-'*45)
-            exit()
-
         else:
             print('\nError. Maaf, Menu tidak tersedia')
 
@@ -93,5 +83,12 @@ while True:
         if Q.upper() == 'Y':
             os.system('cls')
         else:
-            os.system('cls')
-            break
+            print('-'*45)
+            print('Resi tercetak otomatis saat anda keluar. \nHarap simpan tanda terima ini \nsebagai bukti transaksi anda.')
+            print('\nNo. Record: ',random.randint(100000, 1000000))
+            print('Tanggal: ', datetime.datetime.now())
+            print('Saldo akhir: ', atm.checkBalance())
+            print('\nTerimakasih telah menggunakan ATM Progate!')
+            print('-'*45)
+            print("\n Silahkan ambil kartu anda, Terima kasih")
+            exit()
