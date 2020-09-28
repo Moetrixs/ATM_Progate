@@ -3,7 +3,7 @@ import datetime
 import os
 from customer import Customer
 
-os.system('clear')
+os.system('cls')
 
 atm = Customer(id)
 
@@ -19,13 +19,13 @@ while True:
             print('\n!Error!.\nPin anda salah (' + str(trial) +')' + '\n\nSilahkan ambil kartu dan coba lagi ...')
             exit()
 
-    os.system('clear')
+    os.system('cls')
     while True:
         print('\nSelamat datang di ATM progate ...')
         print('\n1-Cek Saldo \n2-Tarik \n3-Simpan \n4-Ganti Pin')
 
         selectmenu = int(input('\nSilahkan pilih menu: '))
-        os.system('clear')
+        os.system('cls')
         if selectmenu == 1:
             print('\nCEK SALDO')
             print('\nSaldo anda sekarang: Rp. ' + str(atm.checkBalance()) + '')
@@ -75,7 +75,7 @@ while True:
                 print('pin baru anda sukses!')
             else:
                 print('maaf, pin anda salah!')
-                
+
         else:
             print('\nError. Maaf, Menu tidak tersedia')
 
